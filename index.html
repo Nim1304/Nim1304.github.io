@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Timepass</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            color:rgb(255,255,255);
+            background-color:rgb(0,0,0);
+            margin:auto;
+        }
+        table {
+            border-collapse: separate;
+        }
+        .head {
+            font-family: 'Noto Sans', sans-serif;
+            text-align: center;
+            font-size: 30px;
+            transition-duration: 500ms;
+        }
+        .table1 {
+            text-align: center;
+            position: relative;
+        }
+        td {
+            height:65px;
+            width: 80px;
+        }
+        .atomic_number {
+            font-size : 10px;
+        } 
+        .sym {
+            text-decoration: none;
+            font-size: 25px;
+            font-family: 'Acme', sans-serif;
+            color:black; 
+        }
+        .at_wt {
+            font-size: 12px;
+        }
+        .element_name {
+            font-size: 12px;
+        }
+        .s{
+            color:black;
+            background-color: rgb(0, 47, 255);
+            border-style: groove;
+            border-radius: 5px;
+        }
+        .d {
+            color:black;
+            background-color: rgb(194, 53, 83);
+            border-style: groove;
+            border-radius: 5px;
+        }
+        .p {
+            color:black;
+            background-color: rgb(255, 208, 0);
+            border-style: groove;
+            border-radius: 5px;
+        }
+        .f {
+            color:black;
+            background-color: green;
+            border-style: groove;
+            border-radius: 5px;
+        }
+        .block:hover{
+            transition-delay: 150ms;
+            height:75px;
+            width:85px;;
+            transition-duration: 350ms;
+            border-width: 2px;
+            border-radius : 20px;
+            background-color: white;
+        }
+        .head:hover {
+            color:rgb(187, 26, 26);
+        }
+        a:hover {
+            transition-delay: 100ms;
+            transition-duration: 200ms;
+            color: rgb(62, 66, 66);
+            font-weight: 700;
+            text-shadow: 1px 1px 4px black;
+        }
+        .element_name:hover,.at_wt:hover{
+            transition-duration: 250ms;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12.5px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="head">Periodic Table of Elements </p>
+    <div class="table1">
+        <table class="periodic-table" align="center">
+            <thead>
+                <tr>
+                    <th>Group</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                    <th>17</th>
+                    <th>18</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <th class="lbl">Period<br>1</th>
+                    <td class="s block">
+                        <div class="atomic_number">1</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Hydrogen" title="Hydrogen">H</a></div>
+                        <div class="at_wt">1.008</div>
+                        <div class="element_name">Hydrogen</div>
+                    </td>
+                    <td colspan="16" class="void"></td>
+                    <td class="p block">
+                        <div class="atomic_number">2</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Helium" title="Helium">He</a></div>
+                        <div class="at_wt">4.0026</div>
+                        <div class="element_name">Helium</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th class="lbl">2</th>
+                    <td class="s block">
+                        <div class="atomic_number">3</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Lithium" title="Lithium">Li</a></div>
+                        <div class="at_wt">6.94</div>
+                        <div class="element_name">Lithium</div>
+                    </td>
+                    <td class="s block">
+                        <div class="atomic_number">4</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Beryllium" title="Beryllium">Be</a></div>
+                        <div class="at_wt">9.0122</div>
+                        <div class="element_name">Beryllium</div>
+                    </td>
+                    <td colspan="10"></td>
+                    <td class="p block">
+                        <div class="atomic_number">5</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Boron" title="Boron">B</a></div>
+                        <div class="at_wt">10.81</div>
+                        <div class="element_name">Boron</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">6</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Carbon" title="Carbon">C</a></div>
+                        <div class="at_wt">12.011</div>
+                        <div class="element_name">Carbon</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">7</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Nitrogen" title="Nitrogen">N</a></div>
+                        <div class="at_wt">14.007</div>
+                        <div class="element_name">Nitrogen</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">8</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Oxygen" title="Oxygen">O</a></div>
+                        <div class="at_wt">15.999</div>
+                        <div class="element_name">Oxygen</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">9</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Fluorine" title="Fluorine">F</a></div>
+                        <div class="at_wt">18.998</div>
+                        <div class="element_name">Fluorine</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">10</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Neon" title="Neon">Ne</a></div>
+                        <div class="at_wt">20.180</div>
+                        <div class="element_name">Neon</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th class="lbl">3</th>
+                    <td class="s block">
+                        <div class="atomic_number">11</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Sodium" title="Sodium">Na</a></div>
+                        <div class="at_wt">22.990</div>
+                        <div class="element_name">Sodium</div>
+                    </td>
+                    <td class="s block">
+                        <div class="atomic_number">12</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Magnesium" title="Magnesium">Mg</a></div>
+                        <div class="at_wt">24.305</div>
+                        <div class="element_name">Magnesium</div>
+                    </td>
+                    <td colspan="10" class="void"></td>
+                    <td class="p block">
+                        <div class="atomic_number">13</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Aluminium" title="Aluminium">Al</a></div>
+                        <div class="at_wt">26.982</div>
+                        <div class="element_name">Aluminium</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">14</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Silicon" title="Silicon">Si</a></div>
+                        <div class="at_wt">28.085</div>
+                        <div class="element_name">Silicon</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">15</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Phosphorus" title="Phosphorus">P</a></div>
+                        <div class="at_wt">30.974</div>
+                        <div class="element_name">Phosphorus</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">16</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Sulfur" title="Sulfur">S</a>	</div>
+                        <div class="at_wt">32.06</div>
+                        <div class="element_name">Sulfur</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">17</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Chlorine" title="Chlorine">Cl</a></div>
+                        <div class="at_wt">35.45</div>
+                        <div class="element_name">Chlorine</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">18</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Argon" title="Argon">Ar</a></div>
+                        <div class="at_wt">39.948</div>
+                        <div class="element_name">Argon</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th class="lbl">4</th>
+                    <td class="s block">
+                        <div class="atomic_number">19</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Potassium" title="Potassium">K</a></div>
+                        <div class="at_wt">39.098</div>
+                        <div class="element_name">Potassium</div>
+                    </td>
+                    <td class="s block">
+                        <div class="atomic_number">20</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Calcium" title="Calcium">Ca</a></div>
+                        <div class="at_wt">40.078</div>
+                        <div class="element_name">Calcium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">21</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Scandium" title="Scandium">Sc</a></div>
+                        <div class="at_wt">44.956</div>
+                        <div class="element_name">Scandium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">22</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Titanium" title="Titanium">Ti</a></div>
+                        <div class="at_wt">47.867</div>
+                        <div class="element_name">Titanium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">23</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Vanadium" title="Vanadium">V</a></div>
+                        <div class="at_wt">50.942</div>
+                        <div class="element_name">Vanadium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">24</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Chromium" title="Chromium">Cr</a></div>
+                        <div class="at_wt">51.996</div>
+                        <div class="element_name">Chromium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">25</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Manganese" title="Manganese">Mn</a></div>
+                        <div class="at_wt">54.938</div>
+                        <div class="element_name">Manganese</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">26</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Iron" title="Iron">Fe</a></div>
+                        <div class="at_wt">55.845</div>
+                        <div class="element_name">Iron</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">27</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Cobalt" title="Cobalt">Co</a></div>
+                        <div class="at_wt">58.933</div>
+                        <div class="element_name">Cobalt</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">28</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Nickel" title="Nickel">Ni</a></div>
+                        <div class="at_wt">58.693</div>
+                        <div class="element_name">Nickel</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">29</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Copper" title="Copper">Cu</a></div>
+                        <div class="at_wt">63.546</div>
+                        <div class="element_name">Copper</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">30</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Zinc" title="Zinc">Zn</a></div>
+                        <div class="at_wt">65.38</div>
+                        <div class="element_name">Zinc</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">31</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Gallium" title="Gallium">Ga</a></div>
+                        <div class="at_wt">69.723</div>
+                        <div class="element_name">Gallium</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">32</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Germanium" title="Germanium">Ge</a></div>
+                        <div class="at_wt">72.630</div>
+                        <div class="element_name">Germanium</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">33</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Arsenic" title="Arsenic">As</a></div>
+                        <div class="at_wt">74.922</div>
+                        <div class="element_name">Arsenic</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">34</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Selenium" title="Selenium">Se</a></div>
+                        <div class="at_wt">78.971</div>
+                        <div class="element_name">Selenium</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">35</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Bromine" title="Bromine">Br</a></div>
+                        <div class="at_wt">79.904</div>
+                        <div class="element_name">Bromine</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">36</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Krypton" title="Krypton">Kr</a></div>
+                        <div class="at_wt">83.798</div>
+                        <div class="element_name">Krypton</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th class="lbl">5</th>
+                    <td class="s block">
+                        <div class="atomic_number">37</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Rubidium" title="Rubidium">Rb</a></div>
+                        <div class="at_wt">85.468</div>
+                        <div class="element_name">Rubidium</div>
+                    </td>
+                    <td class="s block">
+                        <div class="atomic_number">38</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Strontium" title="Strontium">Sr</a></div>
+                        <div class="at_wt">87.62</div>
+                        <div class="element_name">Strontium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">39</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Yttrium" title="Yttrium">Y</a></div>
+                        <div class="at_wt">88.906</div>
+                        <div class="element_name">Yttrium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">40</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Zirconium" title="Zirconium">Zr</a></div>
+                        <div class="at_wt">91.224</div>
+                        <div class="element_name">Zirconium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">41</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Niobium" title="Niobium">Nb</a></div>
+                        <div class="at_wt">92.906</div>
+                        <div class="element_name">Niobium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">42</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Molybdenum" title="Molybdenum">Mo</a></div>
+                        <div class="at_wt">95.95</div>
+                        <div class="element_name">Molybdenum</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">43</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Technetium" title="Technetium">Tc</a></div>
+                        <div class="at_wt">96.906</div>
+                        <div class="element_name">Technetium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">44</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Ruthenium" title="Ruthenium">Ru</a></div>
+                        <div class="at_wt">101.07</div>
+                        <div class="element_name">Ruthenium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">45</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Rhodium" title="Rhodium">Rh</a></div>
+                        <div class="at_wt">102.91</div>
+                        <div class="element_name">Rhodium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">46</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Palladium" title="Palladium">Pd</a></div>
+                        <div class="at_wt">106.42</div>
+                        <div class="element_name">Palladium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">47</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Silver" title="Silver">Ag</a></div>
+                        <div class="at_wt">107.87</div>
+                        <div class="element_name">Silver</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">48</div>
+                        <div class="sym"><a class="sym" href="Cadmium" title="Cadmium">Cd</a></div>
+                        <div class="at_wt">112.41</div>
+                        <div class="element_name">Cadmium</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">49</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Indium" title="Indium">In</a></div>
+                        <div class="at_wt">114.82</div>
+                        <div class="element_name">Indium</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">50</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Tin" title="Tin">Sn</a></div>
+                        <div class="at_wt">118.71</div>
+                        <div class="element_name">Tin</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">51</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Antimony" title="Antimony">Sb</a></div>
+                        <div class="at_wt">121.76</div>
+                        <div class="element_name">Antimony</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">52</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Tellurium" title="Tellurium">Te</a></div>
+                        <div class="at_wt">127.60</div>
+                        <div class="element_name">Tellurium</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">53</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Iodine" title="Iodine">I</a></div>
+                        <div class="at_wt">126.90</div>
+                        <div class="element_name">Iodine</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">54</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Xenon" title="Xenon">Xe</a></div>
+                        <div class="at_wt">131.29</div>
+                        <div class="element_name">Xenon</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th class="lbl">6</th>
+                    <td class="s block">
+                        <div class="atomic_number">55</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Caesium" title="Caesium">Cs</a></div>
+                        <div class="at_wt">132.91</div>
+                        <div class="element_name">Caesium</div>
+                    </td>
+                    <td class="s block">
+                        <div class="atomic_number">56</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Barium" title="Barium">Ba</a></div>
+                        <div class="at_wt">137.33</div>
+                        <div class="element_name">Barium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">57-71</div>
+                        <div class="sym">La-Lu</div>
+                        <div class="element_name">Lanthanum</div>
+                        <div class="element_name">Lutetium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">72</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Hafnium" title="Hafnium">Hf</a></div>
+                        <div class="at_wt">178.49</div>
+                        <div class="element_name">Hafnium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">73</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Tantalum" title="Tantalum">Ta</a></div>
+                        <div class="at_wt">180.95</div>
+                        <div class="element_name">Tantalum</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">74</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Tungsten" title="Tungsten">W</a></div>
+                        <div class="at_wt">183.84</div>
+                        <div class="element_name">Tungsten</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">75</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Rhenium" title="Rhenium">Re</a></div>
+                        <div class="at_wt">186.21</div>
+                        <div class="element_name">Rhenium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">76</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Osmium" title="Osmium">Os</a></div>
+                        <div class="at_wt">190.23</div>
+                        <div class="element_name">Osmium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">77</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Iridium" title="Iridium">Ir</a></div>
+                        <div class="at_wt">192.22</div>
+                        <div class="element_name">Iridium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">78</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Platinum" title="Platinum">Pt</a></div>
+                        <div class="at_wt">195.08</div>
+                        <div class="element_name">Platinum</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">79</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Gold" title="Gold">Au</a></div>
+                        <div class="at_wt">196.97</div>
+                        <div class="element_name">Gold</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">80</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Mercury" title="Mercury">Hg</a></div>
+                        <div class="at_wt">200.59</div>
+                        <div class="element_name">Mercury</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">81</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Thallium" title="Thallium">Tl</a></div>
+                        <div class="at_wt">204.38</div>
+                        <div class="element_name">Thallium</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">82</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Lead" title="Lead">Pb</a></div>
+                        <div class="at_wt">207.2</div>
+                        <div class="element_name">Lead</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">83</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Bismuth" title="Bismuth">Bi</a></div>
+                        <div class="at_wt">208.98</div>
+                        <div class="element_name">Bismuth</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">84</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Polonium" title="Polonium">Po</a></div>
+                        <div class="at_wt">208.98</div>
+                        <div class="element_name">Polonium</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">85</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Astatine" title="Astatine">At</a></div>
+                        <div class="at_wt">209.99</div>
+                        <div class="element_name">Astatine</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">86</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Radon" title="Radon">Rn</a></div>
+                        <div class="at_wt">222.02</div>
+                        <div class="element_name">Radon</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th class="lbl">7</th>
+                    <td class="s block">
+                        <div class="atomic_number">87</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Francium" title="Francium">Fr</a></div>
+                        <div class="at_wt">223.02</div>
+                        <div class="element_name">Francium</div>
+                    </td>
+                    <td class="s block">
+                        <div class="atomic_number">88</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Radium" title="Radium">Ra</a></div>
+                        <div class="at_wt">226.03</div>
+                        <div class="element_name">Radium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">89-103</div>
+                        <div class="sym">Ac-Lr</div>
+                        <div class="element_name">Actinium</div>
+                        <div class="element_name">Lawrencium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">104</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Rutherfordium" title="Rutherfordium">Rf</a></div>
+                        <div class="at_wt">267.12</div>
+                        <div class="element_name">Rutherfordium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">105</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Dubnium" title="Dubnium">Db</a></div>
+                        <div class="at_wt">270.13</div>
+                        <div class="element_name">Dubnium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">106</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Seaborgium" title="Seaborgium">Sg</a></div>
+                        <div class="at_wt">269.13</div>
+                        <div class="element_name">Seaborgium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">107</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Bohrium" title="Bohrium">Bh</a></div>
+                        <div class="at_wt">270.13</div>
+                        <div class="element_name">Bohrium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">108</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Hassium" title="Hassium">Hs</a></div>
+                        <div class="at_wt">269.13</div>
+                        <div class="element_name">Hassium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">109</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Meitnerium" title="Meitnerium">Mt</a></div>
+                        <div class="at_wt">278.16</div>
+                        <div class="element_name">Meitnerium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">110</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Darmstadtium" title="Darmstadtium">Ds</a></div>
+                        <div class="at_wt">281.17</div>
+                        <div class="element_name">Darmstadtium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">111</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Roentgenium" title="Roentgenium">Rg</a></div>
+                        <div class="at_wt">281.17</div>
+                        <div class="element_name">Roentgenium</div>
+                    </td>
+                    <td class="d block">
+                        <div class="atomic_number">112</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Copernicium" title="Copernicium">Cn</a></div>
+                        <div class="at_wt">285.18</div>
+                        <div class="element_name">Copernicium</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">113</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Nihonium" title="Nihonium">Nh</a></div>
+                        <div class="at_wt">286.18</div>
+                        <div class="element_name">Nihonium</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">114</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Flerovium" title="Flerovium">Fl</a></div>
+                        <div class="at_wt">289.19</div>
+                        <div class="element_name">Flerovium</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">115</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Moscovium" title="Moscovium">Mc</a></div>
+                        <div class="at_wt">289.20</div>
+                        <div class="element_name">Moscovium</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">116</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Livermorium" title="Livermorium">Lv</a></div>
+                        <div class="at_wt">293.20</div>
+                        <div class="element_name">Livermorium</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">117</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Tennessine" title="Tennessine">Ts</a></div>
+                        <div class="at_wt">293.21</div>
+                        <div class="element_name">Tennessine</div>
+                    </td>
+                    <td class="p block">
+                        <div class="atomic_number">118</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Oganesson" title="Oganesson">Og</a></div>
+                        <div class="at_wt">294.21</div>
+                        <div class="element_name">Oganesson</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="20" class="v"></td>
+                </tr>
+                
+                <tr>
+                    <th class="lbl" colspan="2">Lanthanoids</th>
+                    <td class="f block">
+                        <div class="atomic_number">57</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Lanthanum" title="Lanthanum">La</a></div>
+                        <div class="at_wt">138.91</div>
+                        <div class="element_name">Lanthanum</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">58</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Cerium" title="Cerium">Ce</a></div>
+                        <div class="at_wt">140.12</div>
+                        <div class="element_name">Cerium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">59</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Praseodymium" title="Praseodymium">Pr</a></div>
+                        <div class="at_wt">140.91</div>
+                        <div class="element_name">Praseodymium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">60</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Neodymium" title="Neodymium">Nd</a></div>
+                        <div class="at_wt">144.24</div>
+                        <div class="element_name">Neodymium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">61</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Promethium" title="Promethium">Pm</a></div>
+                        <div class="at_wt">144.91</div>
+                        <div class="element_name">Promethium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">62</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Samarium" title="Samarium">Sm</a></div>
+                        <div class="at_wt">150.36</div>
+                        <div class="element_name">Samarium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">63</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Europium" title="Europium">Eu</a></div>
+                        <div class="at_wt">151.96</div>
+                        <div class="element_name">Europium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">64</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Gadolinium" title="Gadolinium">Gd</a></div>
+                        <div class="at_wt">157.25</div>
+                        <div class="element_name">Gadolinium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">65</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Terbium" title="Terbium">Tb</a></div>
+                        <div class="at_wt">158.93</div>
+                        <div class="element_name">Terbium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">66</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Dysprosium" title="Dysprosium">Dy</a></div>
+                        <div class="at_wt">162.50</div>
+                        <div class="element_name">Dysprosium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">67</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Holmium" title="Holmium">Ho</a></div>
+                        <div class="at_wt">164.93</div>
+                        <div class="element_name">Holmium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">68</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Erbium" title="Erbium">Er</a></div>
+                        <div class="at_wt">167.26</div>
+                        <div class="element_name">Erbium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">69</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Thulium" title="Thulium">Tm</a></div>
+                        <div class="at_wt">168.93</div>
+                        <div class="element_name">Thulium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">70</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Ytterbium" title="Ytterbium">Yb</a></div>
+                        <div class="at_wt">173.05</div>
+                        <div class="element_name">Ytterbium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number xd">71</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Lutetium" title="Lutetium">Lu</a></div>
+                        <div class="at_wt">174.97</div>
+                        <div class="element_name">Lutetium</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th class="lbl" colspan="2">Actinoids</th>
+                    <td class="f block">
+                        <div class="atomic_number">89</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Actinium" title="Actinium">Ac</a></div>
+                        <div class="at_wt">227.03</div>
+                        <div class="element_name">Actinium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">90</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Thorium" title="Thorium">Th</a></div>
+                        <div class="at_wt">232.04</div>
+                        <div class="element_name">Thorium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">91</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Protactinium" title="Protactinium">Pa</a></div>
+                        <div class="at_wt">231.04</div>
+                        <div class="element_name">Protactinium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">92</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Uranium" title="Uranium">U</a></div>
+                        <div class="at_wt">238.03</div>
+                        <div class="element_name">Uranium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">93</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Neptunium" title="Neptunium">Np</a></div>
+                        <div class="at_wt">237.05</div>
+                        <div class="element_name">Neptunium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">94</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Plutonium" title="Plutonium">Pu</a></div>
+                        <div class="at_wt">244.06</div>
+                        <div class="element_name">Plutonium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">95</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Americium" title="Americium">Am</a></div>
+                        <div class="at_wt">243.06</div>
+                        <div class="element_name">Americium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">96</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Curium" title="Curium">Cm</a></div>
+                        <div class="at_wt">247.07</div>
+                        <div class="element_name">Curium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">97</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Berkelium" title="Berkelium">Bk</a></div>
+                        <div class="at_wt">247.07</div>
+                        <div class="element_name">Berkelium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">98</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Californium" title="Californium">Cf</a></div>
+                        <div class="at_wt">251.08</div>
+                        <div class="element_name">Californium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">99</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Einsteinium" title="Einsteinium">Es</a></div>
+                        <div class="at_wt">252.08</div>
+                        <div class="element_name">Einsteinium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">100</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Fermium" title="Fermium">Fm</a></div>
+                        <div class="at_wt">257.10</div>
+                        <div class="element_name">Fermium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">101</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Mendelevium" title="Mendelevium">Md</a></div>
+                        <div class="at_wt">258.10</div>
+                        <div class="element_name">Mendelevium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">102</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Nobelium" title="Nobelium">No</a></div>
+                        <div class="at_wt">259.10</div>
+                        <div class="element_name">Nobelium</div>
+                    </td>
+                    <td class="f block">
+                        <div class="atomic_number">103</div>
+                        <div class="sym"><a class="sym" href="https://en.wikipedia.org/wiki/Lawrencium" title="Lawrencium">Lr</a></div>
+                        <div class="at_wt">262.11</div>
+                        <div class="element_name">Lawrencium</div>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
